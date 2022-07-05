@@ -57,21 +57,24 @@ console.log('This record is', myMusic[3]);
 console.log('This record is', myMusic[4]);
 console.log('This record is', myMusic[5]);
 
-console.log(collection);
+console.log('this is the collection',collection);
 // Object.keys(myMusic).forEach((prop)=> console.log(prop));
 
 // console.console.);(myMusic.title);log(
 // console.log([myMusic.title.artist.yearPublished])
 // console.log(Object.values(collection));
 
-
-function showCollection(collection){
-    // for(let i = 0; i < collection.length; i++){
-    //     console.log(collection);
-    //  }
+function showCollection(array){
+    for(let i = 0; i < array.length; i++){
+        // console.log(collection);
+        return array;
+     }
 
 }//end of showCollection function
-console.log(showCollection());
+console.log(showCollection('number of items in',array));
+
+
+
 
 let emptyArray = [];
 function findByArtist(){
