@@ -1,5 +1,7 @@
 console.log('***** Music Collection *****')
-let collection = [{
+let collection = [];//empty array
+
+let myMusic = [{
     title: 'Lungs',
     artist: 'Florence and The Machine',
     yearPublished: 2009
@@ -30,30 +32,48 @@ let collection = [{
     yearPublished: 2013,
 }];
 
-console.log(collection.title, 'Lungs');
+// console.log(collection.title, 'Lungs');
 
-let myMusic = {
-    title: ' ',
-    artist: ' ',
-    yearPublished: ' ',
-};
 
 function addToCollection(titleInput, artistInput, yearPublishedInput){
     collection.push(myMusic);
-    return collection;
+    return myMusic;
+    // for(let title of titleInput){
+    //     console.log(title);
+    // }
+    // for(let title of myMusic){
+    //     console.log(myMusic.title);
+    //     // return myMusic;
+    // }
+    // for(let i = 0; i < collection.length; i++){
+    //         console.log(collection);
+    //      }
 }
 console.table(addToCollection());
+console.log('This record is', myMusic[0]);
+console.log('This record is', myMusic[1]);
+console.log('This record is', myMusic[2]);
+console.log('This record is', myMusic[3]);
+console.log('This record is', myMusic[4]);
+console.log('This record is', myMusic[5]);
+
+console.log(collection);
+// Object.keys(myMusic).forEach((prop)=> console.log(prop));
+
+// console.console.);(myMusic.title);log(
+// console.log([myMusic.title.artist.yearPublished])
+// console.log(Object.values(collection));
 
 
 function showCollection(collection){
-    for(let i = 0; i < collection.length; i++){
-        console.log(collection);
-     }
+    // for(let i = 0; i < collection.length; i++){
+    //     console.log(collection);
+    //  }
 
 }//end of showCollection function
 console.log(showCollection());
 
-
+let emptyArray = [];
 function findByArtist(){
 
 
