@@ -77,9 +77,13 @@ console.log(showCollection('number of items in',array));
 
 
 let emptyArray = [];
-function findByArtist(){
-
-
-
+function findByArtist(artistInput, collectionInput){
+    for(let i =0;i < collectionInput.length;i++){
+        if(artistInput === collectionInput[i].artist){
+            emptyArray.push(collectionInput[i])
+        }
+    }
 
 }
+findByArtist('Doja Cat', myMusic);
+console.log(emptyArray);
